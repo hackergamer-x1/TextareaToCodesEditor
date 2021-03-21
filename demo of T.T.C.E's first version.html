@@ -1,0 +1,45 @@
+
+<textarea style="width: 200;height: 400" id="TextAreaTTCE"></textarea>
+
+
+
+
+<style>/* .hello{
+background-image : url("btnimg/editor.icon.png");
+}
+*/
+
+</style>
+
+
+
+
+
+
+<script>
+
+var TTCEconfig
+
+
+ = {
+
+                  textarea : "#TextAreaTTCE",
+                  DefaultText: "",
+                  InsertTagButtons : false,
+                  TextColor : "blue",
+                  AddNewClass : "anything",
+                  LineNumbers : true,
+                  MenuBar : {IsHidden : true,buttons : "saver | run | copybtn | undo | redo | cutbtn | pastbtn | selectall | deleteselection | deleteall | lcflsbtn | tabulationbtn"},
+                  SaveMethod : "file",
+                  RunCode : {RunIframe : "#rf"},
+
+};
+
+
+
+
+TTCE.init(TTCEconfig);
+
+</script>
+
+<script src="ttce-1.2.9.js"></script>
