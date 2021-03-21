@@ -1,8 +1,8 @@
 /*
 
-TextareaToCodesEditor is a JavaScript to turn any textarea to a codes and texts editor.
+TextareaToCodesEditor is a JavaScript to turn any Textarea To Codes Editor.
 
-This editor contains many functionalities (all functions uses are showed at the end) :
+This editor contains some useful functionalities:
 
 - LineNumbers : lines are numbered and their numbers are showed next to the selected textarea.
 - MenuBar : menubar is placed at the top of the selected textarea and contains many buttons to edit texts and codes.
@@ -10,20 +10,6 @@ This editor contains many functionalities (all functions uses are showed at the 
 - Width : you can personalize the textarea's width in TTCE's config.
 - Height : you can personalize the textarea's height in TTCE's config.
 - InsertTagButtons : if you are writing a HTML/XML... code, many buttons well be added to the MenuBar, and any button have a text into him(e.g. html/head/body...) and when you click on a button a tag with the text into the clicked button well be added to the selected textarea to edit codes easily and fastest.
-- You can personalize any other css style at the TTCE's config and it well be applied to the selected Textarea.
-
-
-
-
-
-Here is an example of a config showing the TTCE config with all functionalities turned On :
-
-
-
-
- MenuBar : {buttons : "saver | run | copybtn | cutbtn | pastbtn | selectall | deleteselection | deleteall"}
-
-
 
 
 
@@ -71,6 +57,25 @@ ta.innerHTML = uconfig.DefaultText;
 ta.style.color = uconfig.TextColor;
 
 }
+
+
+ if(uconfig.width !== null){
+
+ta.style.width = uconfig.width;
+
+}
+
+
+
+ if(uconfig.height !== null){
+
+ta.style.height = uconfig.height;
+
+}
+
+
+
+
 
 
 
